@@ -162,6 +162,7 @@ impl<W: Write> Processor<W> {
                     )?;
                     //Ok(IncludeHandling::Leave)
                     Ok(IncludeHandling::Remove)
+                    
                 } else {
                     debug!(
                         "Skipping {:?}, already included",
