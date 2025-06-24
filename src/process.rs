@@ -160,7 +160,8 @@ impl<W: Write> Processor<W> {
                         "{}",
                         CyclicIncludeError { cycle }
                     )?;
-                    Ok(IncludeHandling::Leave)
+                    //Ok(IncludeHandling::Leave)
+                    Ok(IncludeHandling::Remove)
                 } else {
                     debug!(
                         "Skipping {:?}, already included",
