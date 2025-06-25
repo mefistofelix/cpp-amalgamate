@@ -24,6 +24,7 @@ globset = "0.4.8"
 itertools = "0.10.3"
 log = { version = "0.4.17", features = ["std"] }
 regex = "1.5.6"
+dunce = "1.0.5"
 
 [dev-dependencies]
 assert_cmd = "2.0.4"
