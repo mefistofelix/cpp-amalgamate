@@ -186,7 +186,7 @@ impl<W: Write> Processor<W> {
                     self.writer,
                     "#line {} \"{}\"",
                     cur_line.num,
-                    dunce::canonicalize(cur_file.canonical_path.clone())?.display()
+                    dunce::canonicalize(cur_file.canonical_path.clone())?.display().to_string().replace("\\","/")
                 )?;
                 *expected_line = cur_line;
             }
